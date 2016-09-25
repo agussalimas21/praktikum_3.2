@@ -10,9 +10,9 @@ analogReference(DEFAULT);
 }
 
 void loop() {
-unsigned int dataADC = analogwrite(A0);
+unsigned int dataADC = analogRead(A0);
 lcd.setCursor(0,1);
 lcd.print("Value = ");
 lcd.print(dataADC);
-delay(100);
+delay(500);
 }
